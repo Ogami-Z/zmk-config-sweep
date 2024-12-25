@@ -61,7 +61,7 @@
 &kp Q  &kp W       &kp E        &kp R        &kp T         &kp Y      &kp U        &kp I        &kp O       &kp P
 &ht LCTRL A  &ht LALT S  &ht LGUI D  &ht LSHIFT F   &kp G         &kp H      &ht RSHIFT J   &ht RGUI K  &ht RALT L  &ht RCTRL ENTER
 &kp Z  &kp X       &kp C        &kp V        &kp B         &kp N      &kp M        &kp COMMA    &kp DOT     &kp BSPC
-                                &lt LEF SPACE  &kp LSHIFT     &kp ENTER &lt RIG TAB
+                                &kp SPACE  &lt LEF TAB     &kp ENTER &lt RIG ESC
             >;
         };
 
