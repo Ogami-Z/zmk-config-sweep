@@ -85,9 +85,9 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W        &kp E        &kp R          &kp T          &kp Y      &kp U          &kp I        &kp O        &kp P
-&hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G          &kp H      &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTRL ENTER
-&kp Z         &kp X        &kp C        &kp V          &kp B          &kp N      &kp M          &kp COMMA    &kp DOT      &kp BSPC
+&ht ESC Q     &kp W        &kp E        &kp R          &kp T          &kp Y      &kp U          &kp I        &kp O          &ht APOS P
+&hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G          &kp H      &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L    &hmr RCTRL ENTER
+&kp Z         &kp X        &kp C        &kp V          &kp B          &kp N      &kp M          &kp COMMA    &ht QMARK DOT  &kp BSPC
                                         &kp SPACE      &lt LEF TAB    &kp ENTER  &lt RIG ESC
             >;
         };
@@ -103,10 +103,10 @@
 
         right_layer {
             bindings = <
-&kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-&kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bootloader
-                              &trans   &kp ESC    &trans    &trans
+&kp N1            &kp N2            &kp N3             &kp N4            &kp N5        &kp N6    &kp N7    &kp N8         &kp N9       &kp N0
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)   &kp LC(NUMBER_4)  &kp LC(N5)    &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT    &trans
+&kp LC(NUMBER_6)  &kp LC(N7)        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE    &kp HOME  &kp END   &kp PAGE_DOWN  &kp PAGE_UP  &bootloader
+                                                       &trans            &kp ESC       &trans    &trans
             >;
         };
 
