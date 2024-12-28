@@ -63,6 +63,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp P>, <&kp APOS>;
+
+            tapping-term-ms = <160>;
         };
 
         mmv {
