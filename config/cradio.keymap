@@ -165,7 +165,7 @@
 
         foward_slash {
             bindings = <&kp SLASH>;
-            key-positions = <28 27>;
+            key-positions = <27 26>;
         };
     };
 
