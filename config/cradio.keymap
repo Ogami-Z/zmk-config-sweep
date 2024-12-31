@@ -135,14 +135,48 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        focus_next_win {
+            bindings = <&kp LG(TILDE)>;
+            key-positions = <7 8>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <7 6>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <6 5>;
+        };
+
+        escape {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <28 27>;
+        };
+
+        foward_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <28 27>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&ht1 ESC Q     &kp W         &kp E            &kp R          &kp T  &kp Y  &kp U          &kp I        &kp O          &kp P
-&hmla LCTRL A  &hmls LALT S  &hml LGUI D      &hml LSHIFT F  &kp G  &kp H  &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L    &hmrc RCTRL ENTER
-&kp Z          &kp X         &kp C            &kp V          &kp B  &kp N  &kp M          &kp COMMA    &ht QMARK DOT  &kp BSPC
+&kp Q          &kp W         &kp E            &kp R          &kp T  &kp Y  &kp U          &kp I        &kp O        &kp P
+&hmla LCTRL A  &hmls LALT S  &hml LGUI D      &hml LSHIFT F  &kp G  &kp H  &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmrc RCTRL ENTER
+&kp Z          &kp X         &kp C            &kp V          &kp B  &kp N  &kp M          &kp COMMA    &kp PERIOD   &kp BSPC
 &kp SPACE      &lt 3 TAB     &kp RIGHT_SHIFT  &lt RIG ESC
             >;
         };
