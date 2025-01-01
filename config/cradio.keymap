@@ -256,11 +256,6 @@
             bindings = <&kp RG(RIGHT_SHIFT)>;
             key-positions = <17 16>;
         };
-
-        r_option_cmnd_shift {
-            bindings = <&kp RG(RA(RIGHT_SHIFT))>;
-            key-positions = <41 32 9>;
-        };
     };
 
     keymap {
