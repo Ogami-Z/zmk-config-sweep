@@ -217,6 +217,51 @@
             bindings = <&kp LG(LA(LEFT_SHIFT))>;
             key-positions = <31 0>;
         };
+
+        r_option_r_command {
+            bindings = <&kp RA(RIGHT_GUI)>;
+            key-positions = <21 22>;
+        };
+
+        r_control_r_option {
+            bindings = <&kp RC(RIGHT_ALT)>;
+            key-positions = <21 20>;
+        };
+
+        r_control_r_gui {
+            bindings = <&kp RC(RIGHT_GUI)>;
+            key-positions = <20 22>;
+        };
+
+        r_control_r_shift {
+            bindings = <&kp RC(RIGHT_SHIFT)>;
+            key-positions = <20 23>;
+        };
+
+        r_option_r_shift {
+            bindings = <&kp RA(RIGHT_SHIFT)>;
+            key-positions = <21 23>;
+        };
+
+        r_command_r_shift {
+            bindings = <&kp RG(RIGHT_SHIFT)>;
+            key-positions = <23 22>;
+        };
+
+        r_ctrl_opt_cmnd {
+            bindings = <&kp RC(RA(RIGHT_GUI))>;
+            key-positions = <41 30>;
+        };
+
+        r_ctrl_cmnd_shift {
+            bindings = <&kp RC(RG(RIGHT_SHIFT))>;
+            key-positions = <20 41>;
+        };
+
+        r_option_cmnd_shift {
+            bindings = <&kp RG(RA(RIGHT_SHIFT))>;
+            key-positions = <41 10>;
+        };
     };
 
     keymap {
