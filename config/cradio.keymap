@@ -173,7 +173,7 @@
             key-positions = <6 5 7>;
         };
 
-        option_command {
+        l_option_l_command {
             bindings = <&kp LA(LEFT_GUI)>;
             key-positions = <11 12>;
         };
