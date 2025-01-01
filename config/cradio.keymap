@@ -276,6 +276,26 @@
             bindings = <&kp RC(RA(RSHIFT))>;
             key-positions = <32 33>;
         };
+
+        screenshot {
+            bindings = <&kp LG(LS(NUMBER_3))>;
+            key-positions = <2 3>;
+        };
+
+        screenshot_select {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <4 3>;
+        };
+
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <4 3 9>;
+        };
+
+        redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <4 3 8>;
+        };
     };
 
     keymap {
