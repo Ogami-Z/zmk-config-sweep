@@ -289,12 +289,32 @@
 
         undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <4 3 9>;
+            key-positions = <4 3 13 14>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
-            key-positions = <4 3 8>;
+            key-positions = <5 6 15 16>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <26 16>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <27 17>;
+        };
+
+        up {
+            bindings = <&kp UP>;
+            key-positions = <28 18>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <29 19>;
         };
     };
 
