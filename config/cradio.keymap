@@ -318,7 +318,7 @@
         };
 
         force_quit {
-            bindings = <&kp LS(LG(ESC))>;
+            bindings = <&kp LG(LA(ESC))>;
             key-positions = <3 4 5>;
         };
     };
