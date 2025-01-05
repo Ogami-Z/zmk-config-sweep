@@ -279,12 +279,12 @@
 
         screenshot {
             bindings = <&kp LG(LS(NUMBER_3))>;
-            key-positions = <2 3>;
+            key-positions = <2 3 1>;
         };
 
         screenshot_select {
             bindings = <&kp LG(LS(NUMBER_4))>;
-            key-positions = <4 3>;
+            key-positions = <4 3 2>;
         };
 
         undo {
@@ -315,6 +315,11 @@
         right {
             bindings = <&kp RIGHT>;
             key-positions = <29 19>;
+        };
+
+        force_quit {
+            bindings = <&kp LS(LG(ESC))>;
+            key-positions = <3 4 5>;
         };
     };
 
