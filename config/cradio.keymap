@@ -150,24 +150,26 @@
         focus_next_win {
             bindings = <&kp LG(TILDE)>;
             key-positions = <7 8>;
-            require-prior-idle-ms = <295>;
+            require-prior-idle-ms = <260>;
+            timeout-ms = <30>;
         };
 
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <7 6>;
+            require-prior-idle-ms = <260>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <6 5>;
-            require-prior-idle-ms = <295>;
+            require-prior-idle-ms = <260>;
         };
 
         escape {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-            require-prior-idle-ms = <295>;
+            require-prior-idle-ms = <260>;
         };
 
         question_mark {
