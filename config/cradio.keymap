@@ -175,11 +175,13 @@
         question_mark {
             bindings = <&kp QUESTION>;
             key-positions = <28 27>;
+            require-prior-idle-ms = <260>;
         };
 
         foward_slash {
             bindings = <&kp SLASH>;
             key-positions = <27 26>;
+            require-prior-idle-ms = <260>;
         };
 
         move_file {
