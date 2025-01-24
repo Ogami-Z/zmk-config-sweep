@@ -335,9 +335,9 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E                             &kp R          &kp T  &kp Y  &kp U          &kp I        &kp O        &kp P
-&hmla LCTRL A  &hmls LALT S  &hml LGUI D                       &hml LSHIFT F  &kp G  &kp H  &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmrc RCTRL ENTER
-&kp Z          &kp X         &kp C                             &kp V          &kp B  &kp N  &kp M          &kp COMMA    &kp PERIOD   &kp BSPC
+&kp Q          &kp W         &kp E                             &kp R          &kp T  &kp Y  &kp U          &kp I        &kp O         &kp P
+&hmla LCTRL A  &hmls LALT S  &hml LGUI D                       &hml LSHIFT F  &kp G  &kp H  &hmr RSHIFT J  &hmr RGUI K  &hmrc RALT L  &hmrc RCTRL ENTER
+&kp Z          &kp X         &kp C                             &kp V          &kp B  &kp N  &kp M          &kp COMMA    &kp PERIOD    &kp BSPC
 &kp SPACE      &lt 3 TAB     &ht2 LS(LA(LC(LEFT_GUI))) RSHIFT  &lt RIG ESC
             >;
         };
