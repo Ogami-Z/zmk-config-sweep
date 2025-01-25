@@ -26,24 +26,3 @@ include:
     shield: cradio_right
   - board: nice_nano_v2
     shield: settings_reset
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Build firmware
-        run: |
-          # Add your build commands here
-          # For example: make
-
-      - name: Create firmware zip
-        run: zip -r firmware.zip path/to/firmware  # Adjust this path as necessary
-
-      - name: Upload firmware artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: sweep-firmware.zip  # Change this to your desired name
-          path: firmware.zip
