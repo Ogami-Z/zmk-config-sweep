@@ -9,21 +9,24 @@ jobs:
   build:
     uses: sky-bro/zmk/.github/workflows/build-user-config.yml@k4i-sweep-kbd
 
-  rename-artifact:
+  rename-and-upload:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download firmware artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: firmware
-          path: firmware
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Rename firmware file
-        run: mv firmware/firmware.zip firmware/sweep-firmware.zip
+      - name: Get firmware from build directory
+        run: |
+          if [ ! -f build/firmware.zip ]; then
+            echo "Firmware not found in build directory. Exiting."
+            exit 1
+          fi
+          mkdir -p output
+          mv build/firmware.zip output/sweep-firmware.zip
 
-      - name: Upload renamed firmware artifact
+      - name: Upload renamed firmware
         uses: actions/upload-artifact@v3
         with:
           name: sweep-firmware
-          path: firmware/sweep-firmware.zip
+          path: output/sweep-firmware.zip
