@@ -7,20 +7,23 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
+    uses: sky-bro/zmk/.github/workflows/build-user-config.yml@k4i-sweep-kbd
+
+  rename-artifact:
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Download firmware artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: firmware
+          path: firmware
 
-      - name: Build firmware
-        uses: sky-bro/zmk/.github/workflows/build-user-config.yml@k4i-sweep-kbd
+      - name: Rename firmware file
+        run: mv firmware/firmware.zip firmware/sweep-firmware.zip
 
-      - name: Rename firmware
-        run: |
-          mv build/firmware.zip build/sweep-firmware.zip
-
-      - name: Upload renamed firmware
+      - name: Upload renamed firmware artifact
         uses: actions/upload-artifact@v3
         with:
           name: sweep-firmware
-          path: build/sweep-firmware.zip
+          path: firmware/sweep-firmware.zip
