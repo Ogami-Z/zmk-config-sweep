@@ -275,6 +275,12 @@
             bindings = <&kp LG(LA(ESC))>;
             key-positions = <3 4 5>;
         };
+
+        num_layer {
+            bindings = <&mo 2>;
+            key-positions = <30 31>;
+            require-prior-idle-ms = <50>;
+        };
     };
 
     keymap {
@@ -300,10 +306,10 @@
 
         right_layer {
             bindings = <
-&kp N1            &kp N2            &kp N3             &kp N4            &kp N5      &kp N6    &kp N7    &kp N8         &kp N9       &kp N0
-&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)   &kp LC(NUMBER_4)  &kp LC(N5)  &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT    &ht RIGHT_BRACKET LEFT_BRACKET
-&kp LC(NUMBER_6)  &kp LC(N7)        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE  &kp HOME  &kp END   &kp PAGE_DOWN  &kp PAGE_UP  &bootloader
-&trans            &kp ESC           &trans             &trans
+&kp N1            &kp N2            &kp N3             &kp N4            &kp N5      &kp N6    &kp N7    &kp N8         &kp N9      &kp N0
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)   &kp LC(NUMBER_4)  &kp LC(N5)  &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT   &ht RIGHT_BRACKET LEFT_BRACKET
+&kp LC(NUMBER_6)  &kp LC(N7)        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE  &kp HOME  &kp END   &kp PAGE_DOWN  &kp PERIOD  &bootloader
+&trans            &kp TAB           &trans             &trans
             >;
         };
 
