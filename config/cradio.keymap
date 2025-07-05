@@ -281,6 +281,20 @@
             key-positions = <30 31>;
             require-prior-idle-ms = <50>;
         };
+
+        single_quotes {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <21 22>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <260>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <23 22>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <260>;
+        };
     };
 
     keymap {
