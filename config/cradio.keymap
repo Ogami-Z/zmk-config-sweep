@@ -129,6 +129,18 @@
             hold-trigger-on-release;
         };
 
+        ht3: ht3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT3";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <293>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <70>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <300>;    // 40
@@ -305,16 +317,16 @@
 &kp Q          &kp W         &kp E                             &kp R          &kp T  &kp Y  &kp U          &kp I        &kp O         &kp P
 &hmla LCTRL A  &hmls LALT S  &hml LGUI D                       &hml LSHIFT F  &kp G  &kp H  &hmr RSHIFT J  &hmr RGUI K  &hmrc RALT L  &hmrc RCTRL ENTER
 &kp Z          &kp X         &kp C                             &kp V          &kp B  &kp N  &kp M          &kp COMMA    &kp PERIOD    &kp BSPC
-&kp SPACE      &lt 3 TAB     &ht2 LS(LA(LC(LEFT_GUI))) RSHIFT  &lt RIG ESC
+&ht3 1 SPACE   &lt 3 TAB     &ht2 LS(LA(LC(LEFT_GUI))) RSHIFT  &lt RIG ESC
             >;
         };
 
-        windows_layer {
+        logic_layer {
             bindings = <
-&kp Q        &kp W       &kp E       &kp R        &kp T  &kp Y  &kp U        &kp I       &kp O       &ht APOS P
-&kp A        &ht LALT S  &ht LGUI D  &ht LCTRL F  &kp G  &kp H  &ht RCTRL J  &ht RGUI K  &ht RALT L  &kp BSPC
-&kp Z        &kp X       &kp C       &kp V        &kp B  &kp N  &kp M        &kp COMMA   &kp DOT     &kp ENTER
-&lt LEF TAB  &kp LSHIFT  &kp SPACE   &lt RIG TAB
+&kp LS(LC(BACKSLASH))  &kp LA(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(LA(DOWN_ARROW))  &kp LS(LA(UP_ARROW))  &kp Y  &kp U        &kp I       &kp O       &ht APOS P
+&kp LA(LG(A))          &kp LA(LG(S))       &kp LS(LG(U))     &kp LS(LG(F))           &kp LS(LG(G))         &kp H  &ht RCTRL J  &ht RGUI K  &ht RALT L  &kp BSPC
+&kp M                  &kp LS(LC(M))       &kp LS(LA(C))     &kp LS(LA(N))           &kp LC(LG(B))         &kp N  &kp M        &kp COMMA   &kp DOT     &kp ENTER
+&lt LEF TAB            &kp LSHIFT          &kp SPACE         &lt RIG TAB
             >;
         };
 
